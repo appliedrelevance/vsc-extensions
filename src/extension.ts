@@ -102,6 +102,7 @@ export function activate(context: ExtensionContext) {
    * @return {*}  {string}
    */
   function relativePath(src: string, tgt: string): string {
+    // Split out the path segments into array elements for the source and target paths.
     const srcelts: string[] = src.split('/');
     const tgtelts: string[] = tgt.split('/');
     let eltno = 0;
@@ -112,7 +113,7 @@ export function activate(context: ExtensionContext) {
       srcelt = srcelts.shift();
       tgtelt = tgtelts.shift();
     }
-    let popups = tgtelts.length - srcelts.length;
+    const popups: number = tgtelts.length > srcelts.length ? tgtelts.length - srcelts.length : 0;
     const fname = './'
       .concat('../'.repeat(popups))
       .concat(tgtelt || '')
