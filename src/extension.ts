@@ -87,8 +87,7 @@ export function activate(context: ExtensionContext) {
   /**
    * Function to compute the relative path between src and tgt without regard
    * to the current working directory.  The built-in path.relative() function
-   * uses the CWD as a base, which cannot be changed. Weird that we have to
-   * do this.
+   * uses the CWD as a base, which cannot be changed. 
    *
    * @param {string} src
    * @param {string} tgt
