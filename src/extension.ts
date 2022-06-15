@@ -100,16 +100,19 @@ export function activate(context: ExtensionContext) {
     // Find the offset in tgt where folder paths are no longer the same.
     let srcelt: string | undefined = srcelts.shift();
     let tgtelt: string | undefined = tgtelts.shift();
+    let commonParent = '';
     while (srcelt !== undefined && tgtelt !== undefined && srcelt === tgtelt) {
+      commonParent = srcelt;
       srcelt = srcelts.shift();
       tgtelt = tgtelts.shift();
     }
-    let popups = tgtelts.length - srcelts.length;
-    const fname = './'
-      .concat('../'.repeat(popups))
-      .concat(tgtelt || '')
-      .concat('/')
-      .concat(tgtelts.join('/'));
+    let popups = tgtelts.length > srcelts.length ? tgtelts.length - srcelts.length - 1 : 0;
+    const fname = path.join('../'.repeat(popups), commonParent, tgtelt || '', ...tgtelts);
+    // const fname = './'
+    //   .concat(''.repeat(popups))
+    //   .concat(tgtelt || '')
+    //   .concat('/')
+    //   .concat(tgtelts.join('/'));
     return fname;
   }
 
@@ -140,7 +143,8 @@ export function activate(context: ExtensionContext) {
       );
       if (folders) {
         folders.forEach((folder: WorkspaceFolder) => {
-          linkpath = folder.uri.path + link;
+          output.appendLine(`[${msTimeValue}] - Inspecting folder ${folder.uri.path}`);
+          linkpath = path.join(folder.uri.path, link.toString());
           if (fs.existsSync(linkpath)) {
             relpath = relativePath(currentFile, linkpath);
             output.appendLine(
