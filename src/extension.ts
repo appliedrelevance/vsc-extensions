@@ -97,7 +97,6 @@ export function activate(context: ExtensionContext) {
   function relativePath(src: string, tgt: string): string {
     const srcelts: string[] = src.split('/');
     const tgtelts: string[] = tgt.split('/');
-    let eltno = 0;
     // Find the offset in tgt where folder paths are no longer the same.
     let srcelt: string | undefined = srcelts.shift();
     let tgtelt: string | undefined = tgtelts.shift();
