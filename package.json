@@ -1,8 +1,8 @@
 {
   "name": "adobe-markdown-authoring",
   "displayName": "Adobe Markdown Authoring",
-  "description": "Integrated preview, linter validation, and keyboard shortcuts for Adobe Flavored Markdown.",
-  "version": "1.1.3",
+  "description": "Integrated preview, linter validation, and keyboard shortcuts for Adobe Flavored Markdown (AFM).",
+  "version": "1.1.4",
   "publisher": "AdobeExL",
   "engines": {
     "vscode": "^1.48.0"
@@ -23,15 +23,20 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "markdown.previewStyles": [
+    "afm.previewStyles": [
       "./assets/styles/docs.css",
       "./assets/styles/base.css"
     ],
-    "markdown.markdownItPlugins": true,
+    "afm.markdownItPlugins": true,
     "configuration": {
       "type": "object",
       "title": "Adobe Flavored Markdown",
       "properties": {
+        "afm.replaceSmartQuotes": {
+					"type": "boolean",
+					"default": false,
+					"markdownDescription": "When `true`, automatically replace smart quotes (`“, ”, ‘, and ’`) with standard quotes (`\" and '`) in markdown files. This feature extends to other characters as well, i.e.; (`©, ™, ®, •`, subscript and superscript characters). This is useful when pasting text from Word documents."
+				},
         "afm.icons.bold": {
           "type": "boolean",
           "default": true,
