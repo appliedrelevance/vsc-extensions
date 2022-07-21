@@ -1,8 +1,12 @@
 "use-strict";
 
-import * as vscode from "vscode";
+import {
+	extensions,
+	TextEditor,
+	window,
+} from 'vscode';
 
-export const output = vscode.window.createOutputChannel(
+export const output = window.createOutputChannel(
   "Adobe Markdown Authoring"
 );
 
@@ -24,7 +28,7 @@ export function checkExtension(
   extensionName: string,
   notInstalledMessage?: string
 ) {
-  const extensionValue = vscode.extensions.getExtension(extensionName);
+  const extensionValue = extensions.getExtension(extensionName);
   if (!extensionValue) {
     if (notInstalledMessage) {
       output.appendLine(notInstalledMessage);
@@ -48,5 +52,32 @@ export function showStatusMessage(message: string) {
  * @param {string} message - the message to post to the editor as an error.
  */
 export async function showWarningMessage(message: string) {
-  vscode.window.showWarningMessage(message);
+  window.showWarningMessage(message);
+}
+
+export function matchAll(pattern: RegExp, text: string): RegExpMatchArray[] {
+	const out: RegExpMatchArray[] = [];
+	pattern.lastIndex = 0;
+	let match: RegExpMatchArray | null = pattern.exec(text);
+	while (match) {
+		if (match) {
+			// This is necessary to avoid infinite loops with zero-width matches
+			if (match.index === pattern.lastIndex) {
+				pattern.lastIndex++;
+			}
+
+			out.push(match);
+		}
+
+		match = pattern.exec(text);
+	}
+	return out;
+}
+
+export function isMarkdownFileCheckWithoutNotification(editor: TextEditor) {
+	if (editor.document.languageId !== 'markdown') {
+		return false;
+	} else {
+		return true;
+	}
 }

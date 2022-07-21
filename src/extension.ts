@@ -11,6 +11,7 @@ import {
 
 import { generateTimestamp, output } from './lib/common';
 import { register } from './lib/commands';
+import { findAndReplaceTargetExpressions } from './lib/utility';
 import MarkdownIt = require('markdown-it');
 
 import * as fs from 'fs';
@@ -24,18 +25,18 @@ export function activate(context: ExtensionContext) {
   output.appendLine(
     `[${msTimeValue}] - Activating Adobe Flavored Markdown extension at ${extensionPath}`
   );
-  // Markdown Shortcuts
+  // Adobe Flavored Markdown
   function buildLanguageRegex(): RegExp {
     const languageArray: string[] | undefined = workspace
-      .getConfiguration('markdownShortcuts')
+      .getConfiguration('afm')
       .get('languages') || ['markdown'];
     return new RegExp('(' + languageArray.join('|') + ')');
   }
 
-  function toggleMarkdownShortcuts(langId: string) {
+  function toggleafm(langId: string) {
     commands.executeCommand(
       'setContext',
-      'markdownShortcuts:enabled',
+      'afm:enabled',
       languageRegex.test(langId)
     );
   }
@@ -44,13 +45,13 @@ export function activate(context: ExtensionContext) {
   let languageRegex = buildLanguageRegex();
   let activeEditor = window.activeTextEditor;
   if (activeEditor) {
-    toggleMarkdownShortcuts(activeEditor.document.languageId);
+    toggleafm(activeEditor.document.languageId);
   }
 
   // Update languageRegex if the configuration changes
   workspace.onDidChangeConfiguration(
     (configChange) => {
-      if (configChange.affectsConfiguration('markdownShortcuts.languages')) {
+      if (configChange.affectsConfiguration('afm.languages')) {
         languageRegex = buildLanguageRegex();
       }
     },
@@ -58,23 +59,26 @@ export function activate(context: ExtensionContext) {
     context.subscriptions
   );
 
-  // Enable/disable markdownShortcuts
+  // Enable/disable afm
   window.onDidChangeActiveTextEditor(
     (editor) => {
       activeEditor = editor;
       if (activeEditor) {
-        toggleMarkdownShortcuts(activeEditor.document.languageId);
+        toggleafm(activeEditor.document.languageId);
       }
     },
     null,
     context.subscriptions
   );
 
+  // When the document changes, find and replace target expressions (for example, smart quotes).
+	workspace.onDidChangeTextDocument(findAndReplaceTargetExpressions);
+
   // Triggered with language id change
   workspace.onDidOpenTextDocument(
     (document) => {
       if (activeEditor && activeEditor.document === document) {
-        toggleMarkdownShortcuts(activeEditor.document.languageId);
+        toggleafm(activeEditor.document.languageId);
       }
     },
     null,
@@ -82,7 +86,7 @@ export function activate(context: ExtensionContext) {
   );
 
   register(context);
-  output.appendLine(`[${msTimeValue}] - Registered markdown shortcuts`);
+  output.appendLine(`[${msTimeValue}] - Registered Adobe Flavored Markdown`);
 
   // /**
   //  * Function to compute the relative path between src and tgt without regard

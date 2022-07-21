@@ -30,39 +30,39 @@
     "markdown.markdownItPlugins": true,
     "configuration": {
       "type": "object",
-      "title": "Markdown Shortcuts",
+      "title": "Adobe Flavored Markdown",
       "properties": {
-        "markdownShortcuts.icons.bold": {
+        "afm.icons.bold": {
           "type": "boolean",
           "default": true,
           "description": "Show bold icon in title bar"
         },
-        "markdownShortcuts.icons.italic": {
+        "afm.icons.italic": {
           "type": "boolean",
           "default": true,
           "description": "Show italic icon in title bar"
         },
-        "markdownShortcuts.icons.strikethrough": {
+        "afm.icons.strikethrough": {
           "type": "boolean",
           "default": true,
           "description": "Show strikethrough icon in title bar"
         },
-        "markdownShortcuts.icons.bullets": {
+        "afm.icons.bullets": {
           "type": "boolean",
           "default": true,
           "description": "Show bullets icon in title bar"
         },
-        "markdownShortcuts.icons.link": {
+        "afm.icons.link": {
           "type": "boolean",
           "default": false,
           "description": "Show link icon in title bar"
         },
-        "markdownShortcuts.icons.image": {
+        "afm.icons.image": {
           "type": "boolean",
           "default": false,
           "description": "Show image icon in title bar"
         },
-        "markdownShortcuts.bold.marker": {
+        "afm.bold.marker": {
           "type": "string",
           "default": "**",
           "description": "Bold marker",
@@ -71,7 +71,7 @@
             "**"
           ]
         },
-        "markdownShortcuts.bullets.marker": {
+        "afm.bullets.marker": {
           "type": "string",
           "default": "*",
           "description": "Bullets marker",
@@ -81,7 +81,7 @@
             "+"
           ]
         },
-        "markdownShortcuts.italics.marker": {
+        "afm.italics.marker": {
           "type": "string",
           "default": "_",
           "description": "Italics marker",
@@ -90,7 +90,7 @@
             "*"
           ]
         },
-        "markdownShortcuts.languages": {
+        "afm.languages": {
           "type": "array",
           "default": [
             "markdown"
@@ -107,7 +107,7 @@
           "dark": "./assets/icons/bold_white.svg",
           "light": "./assets/icons/bold_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleItalic",
@@ -116,7 +116,7 @@
           "dark": "./assets/icons/italic_white.svg",
           "light": "./assets/icons/italic_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleStrikethrough",
@@ -125,7 +125,7 @@
           "dark": "./assets/icons/strikethrough_white.svg",
           "light": "./assets/icons/strikethrough_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleCodeBlock",
@@ -134,12 +134,12 @@
           "dark": "./assets/icons/code_white.svg",
           "light": "./assets/icons/code_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleInlineCode",
         "title": "Toggle inline code",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleLink",
@@ -148,7 +148,7 @@
           "dark": "./assets/icons/link_white.svg",
           "light": "./assets/icons/link_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleImage",
@@ -157,7 +157,7 @@
           "dark": "./assets/icons/image_white.svg",
           "light": "./assets/icons/image_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleBullets",
@@ -166,7 +166,7 @@
           "dark": "./assets/icons/bullet_white.svg",
           "light": "./assets/icons/bullet_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleNumbers",
@@ -175,7 +175,7 @@
           "dark": "./assets/icons/number_white.svg",
           "light": "./assets/icons/number_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleCheckboxes",
@@ -184,7 +184,7 @@
           "dark": "./assets/icons/check_white.svg",
           "light": "./assets/icons/check_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.addTable",
@@ -193,408 +193,417 @@
           "dark": "./assets/icons/grid_white.svg",
           "light": "./assets/icons/grid_black.svg"
         },
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleTitleH1",
         "title": "Toggle Header Level 1",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleTitleH2",
         "title": "Toggle Header Level 2",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleTitleH3",
         "title": "Toggle Header Level 3",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleTitleH4",
         "title": "Toggle Header Level 4",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleTitleH5",
         "title": "Toggle Header Level 5",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleTitleH6",
         "title": "Toggle Header Level 6",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleNote",
         "title": "Toggle Note",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleTip",
         "title": "Toggle Tip",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleCaution",
         "title": "Toggle Caution",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleWarning",
         "title": "Toggle Warning",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleImportant",
         "title": "Toggle Important",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleAdministration",
         "title": "Toggle Administration",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleAvailability",
         "title": "Toggle Availability",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.togglePrerequisites",
         "title": "Toggle Prerequisites",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleError",
         "title": "Toggle Error",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleInfo",
         "title": "Toggle Info",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleSuccess",
         "title": "Toggle Success",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleMoreLikeThis",
         "title": "Toggle More Like This",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleVideo",
         "title": "Toggle Video",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleDNL",
         "title": "Toggle DNL (Do Not Localize)",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       },
       {
         "command": "md-shortcut.toggleUIControl",
         "title": "Toggle UICONTROL",
-        "category": "Markdown Shortcuts"
+        "category": "Adobe Flavored Markdown"
       }
     ],
     "keybindings": [
       {
         "command": "md-shortcut.showCommandPalette",
         "key": "Ctrl+m Ctrl+m",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleBold",
         "key": "Ctrl+b",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleItalic",
         "key": "Ctrl+i",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleLink",
         "key": "Ctrl+l",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleImage",
         "key": "Ctrl+Shift+l",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleCodeBlock",
         "key": "Ctrl+m Ctrl+c",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleInlineCode",
         "key": "Ctrl+m Ctrl+i",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleBullets",
         "key": "Ctrl+m Ctrl+b",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleNumbers",
         "key": "Ctrl+m Ctrl+1",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleCheckboxes",
         "key": "Ctrl+m Ctrl+x",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleNote",
         "key": "Ctrl+m Ctrl+n",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleTip",
         "key": "Ctrl+m Ctrl+t",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleCaution",
         "key": "Ctrl+m Ctrl+c",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleImportant",
         "key": "Ctrl+m Ctrl+p",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleWarning",
         "key": "Ctrl+m Ctrl+w",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleAdministration",
         "key": "Ctrl+m Ctrl+a",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleAvailability",
         "key": "Ctrl+m Ctrl+u",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.togglePrerequisites",
         "key": "Ctrl+m Ctrl+q",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleError",
         "key": "Ctrl+m Ctrl+e",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleInfo",
         "key": "Ctrl+m Ctrl+i",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleSuccess",
         "key": "Ctrl+m Ctrl+s",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleMoreLikeThis",
         "key": "Ctrl+m Ctrl+m",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleVideo",
         "key": "Ctrl+m Ctrl+v",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleDNL",
         "key": "Ctrl+m Ctrl+d",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       },
       {
         "command": "md-shortcut.toggleUIControl",
         "key": "Ctrl+m Ctrl+u",
-        "when": "editorTextFocus && markdownShortcuts:enabled"
+        "when": "editorTextFocus && afm:enabled"
       }
     ],
     "menus": {
       "editor/context": [
         {
           "command": "md-shortcut.toggleBold",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_1@1"
         },
         {
           "command": "md-shortcut.toggleItalic",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_1@2"
         },
         {
           "command": "md-shortcut.toggleStrikethrough",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_1@3"
         },
         {
           "command": "md-shortcut.toggleLink",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_1@4"
         },
         {
           "command": "md-shortcut.toggleImage",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_1@5"
         },
         {
           "command": "md-shortcut.toggleCodeBlock",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_1@6"
         },
         {
           "command": "md-shortcut.toggleInlineCode",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_1@7"
         },
         {
           "command": "md-shortcut.toggleBullets",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_2@1"
         },
         {
           "command": "md-shortcut.toggleNumbers",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_2@2"
         },
         {
           "command": "md-shortcut.toggleCheckboxes",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_2@3"
         },
         {
           "command": "md-shortcut.addTable",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_3@1"
         },
         {
           "command": "md-shortcut.toggleNote",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@1"
         },
         {
           "command": "md-shortcut.toggleTip",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@2"
         },
         {
           "command": "md-shortcut.toggleCaution",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@3"
         },
         {
           "command": "md-shortcut.toggleWarning",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@4"
         },
         {
           "command": "md-shortcut.toggleImportant",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@5"
         },
         {
           "command": "md-shortcut.toggleAdministration",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@6"
         },
         {
           "command": "md-shortcut.toggleAvailability",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@7"
         },
         {
           "command": "md-shortcut.togglePrerequisites",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@8"
         },
         {
           "command": "md-shortcut.toggleError",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@9"
         },
         {
           "command": "md-shortcut.toggleInfo",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@10"
         },
         {
           "command": "md-shortcut.toggleSuccess",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@11"
         },
         {
           "command": "md-shortcut.toggleMoreLikeThis",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@12"
         },
         {
           "command": "md-shortcut.toggleVideo",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@13"
         },
         {
           "command": "md-shortcut.toggleDNL",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@14"
         },
         {
           "command": "md-shortcut.toggleUIControl",
-          "when": "markdownShortcuts:enabled",
+          "when": "afm:enabled",
           "group": "2_markdown_4@15"
         }
       ],
       "editor/title": [
         {
           "command": "md-shortcut.toggleBold",
-          "when": "markdownShortcuts:enabled && config.markdownShortcuts.icons.bold",
+          "when": "afm:enabled && config.afm.icons.bold",
           "group": "navigation@1"
         },
         {
           "command": "md-shortcut.toggleItalic",
-          "when": "markdownShortcuts:enabled && config.markdownShortcuts.icons.italic",
+          "when": "afm:enabled && config.afm.icons.italic",
           "group": "navigation@2"
         },
         {
           "command": "md-shortcut.toggleStrikethrough",
-          "when": "markdownShortcuts:enabled && config.markdownShortcuts.icons.strikethrough",
+          "when": "afm:enabled && config.afm.icons.strikethrough",
           "group": "navigation@3"
         },
         {
           "command": "md-shortcut.toggleBullets",
-          "when": "markdownShortcuts:enabled && config.markdownShortcuts.icons.bullets",
+          "when": "afm:enabled && config.afm.icons.bullets",
           "group": "navigation@4"
         },
         {
           "command": "md-shortcut.toggleLink",
-          "when": "markdownShortcuts:enabled && config.markdownShortcuts.icons.link",
+          "when": "afm:enabled && config.afm.icons.link",
           "group": "navigation@5"
         },
         {
           "command": "md-shortcut.toggleImage",
-          "when": "markdownShortcuts:enabled && config.markdownShortcuts.icons.image",
+          "when": "afm:enabled && config.afm.icons.image",
           "group": "navigation@6"
         }
       ]
     }
   },
+  "highlight-bad-chars.additionalUnicodeChars": [
+    "\u200E",
+    "\u200F",
+    "\u0009",
+    "\u2018",
+    "\u2019",
+    "\u201C",
+    "\u201D"
+],
   "scripts": {
     "vscode:prepublish": "yarn run compile",
     "vscode:uninstall": "node ./out/config/uninstall",
