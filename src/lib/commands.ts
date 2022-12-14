@@ -1,7 +1,5 @@
 import * as vscode from "vscode";
 
-import { getEol } from "./env";
-
 import { ExtensionContext, QuickPickOptions, QuickPickItem } from "vscode";
 
 import { addTable } from "./tables";
@@ -38,6 +36,7 @@ import { toggleTip } from "./commands/toggle-tip";
 import { toggleUIControl } from "./commands/toggle-uicontrol";
 import { toggleVideo } from "./commands/toggle-video";
 import { toggleWarning } from "./commands/toggle-warning";
+import { toggleShadebox } from './commands/toggle-shadebox';
 
 interface CommandItem extends QuickPickItem {
   label: string;
@@ -179,6 +178,13 @@ const _commands: Command[] = [
     toggleCheckboxes,
     "Toggle checkboxes",
     "- [x] Checkbox item",
+    true
+  ),
+  new Command(
+    "toggleShadebox",
+    toggleShadebox,
+    "Toggle Shade Box",
+    ">[!SHADEBOX]\r\nThis is a Shade Box.\r\n>[!ENDSHADEBOX]",
     true
   ),
   new Command("addTable", addTable, "Add table", "Tabular | values", true),

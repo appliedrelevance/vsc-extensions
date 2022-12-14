@@ -193,6 +193,15 @@
         "category": "Markdown Shortcuts"
       },
       {
+        "command": "md-shortcut.toggleShadebox",
+        "title": "Toggle Shadebox",
+        "icon": {
+          "dark": "./assets/icons/Shadebox_white.svg",
+          "light": "./assets/icons/Shadebox_black.svg"
+        },
+        "category": "Markdown Shortcuts"
+      },
+      {
         "command": "md-shortcut.addTable",
         "title": "Add table",
         "icon": {
@@ -305,6 +314,11 @@
         "command": "md-shortcut.toggleUIControl",
         "title": "Toggle UICONTROL",
         "category": "Markdown Shortcuts"
+      },
+      {
+        "command": "md-shortcut.toggleShadebox",
+        "title": "Toggle Shade Box",
+        "category": "Markdown Shortcuts"
       }
     ],
     "keybindings": [
@@ -359,6 +373,11 @@
         "when": "editorTextFocus && markdown:enabled"
       },
       {
+        "command": "md-shortcut.toggleShadebox",
+        "key": "Ctrl+m Ctrl+h",
+        "when": "editorTextFocus && markdown:enabled"
+      },
+      {
         "command": "md-shortcut.toggleNote",
         "key": "Ctrl+m Ctrl+n",
         "when": "editorTextFocus && markdown:enabled"
@@ -390,7 +409,7 @@
       },
       {
         "command": "md-shortcut.toggleAvailability",
-        "key": "Ctrl+m Ctrl+u",
+        "key": "Ctrl+m Ctrl+y",
         "when": "editorTextFocus && markdown:enabled"
       },
       {
@@ -487,9 +506,14 @@
           "group": "2_markdown_2@3"
         },
         {
+          "command": "md-shortcut.toggleShadebox",
+          "when": "markdown:enabled",
+          "group": "2_markdown_2@4"
+        },
+        {
           "command": "md-shortcut.addTable",
           "when": "markdown:enabled",
-          "group": "2_markdown_3@1"
+          "group": "2_markdown_3@0"
         },
         {
           "command": "md-shortcut.toggleNote",
@@ -683,6 +707,7 @@
   "dependencies": {
     "js-yaml": "^4.1.0",
     "markdown-it": "^13.0.1",
+    "markdown-it-adobe-plugin": "file:../markdown-it-adobe-plugin",
     "markdown-it-replace-link": "^1.1.0"
   },
   "devDependencies": {
