@@ -52,6 +52,48 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@spectrum-css/button@^6.0.17":
+  version "6.0.17"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/button/-/button-6.0.17.tgz#ec41fcdb1925a5278eb5fe9ea536ad3d529991cb"
+  integrity sha512-m23GdIshbmGuuk4BWnltv+YbIDND6AMUAfTiMkvSylMP7nZ9bsA0Dh8Co11ZNNUMm6KBIYavoz+RYO3w/EZrTw==
+
+"@spectrum-css/icon@^3.0.25":
+  version "3.0.25"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/icon/-/icon-3.0.25.tgz#61ec5f7ffb210bdaa099d35cff070473e2253b28"
+  integrity sha512-wGGzBn4PgnnQJZM7OaoTT/KnYxOfWS3/skKwWbKxXR17w/xg57NiW8yrhg2DMXa5Ud/SAqK4nqQJeEBDRAu6Lg==
+
+"@spectrum-css/menu@^4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/menu/-/menu-4.0.6.tgz#0f29b0468b0abd94bef1ed99d28d0a12f688d4dc"
+  integrity sha512-gGDxxmjH0nQO3gYmqAFqqSXOUzbmHtVXP6Dn7RDRCcYqaaxWBYXhDtuiWAcwaspwGl228Z4BZzKY9HqObK1ZtA==
+
+"@spectrum-css/page@^5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/page/-/page-5.0.12.tgz#7247bfc9b05ff1d0757fae74a941c3f557618101"
+  integrity sha512-MWnzgZWVU1Zn0U1M0HgaKxvSzI9eTnDIvp5+RNR/31cIvUCJgq5HHK3xAEkV5wbZH0+WrsosXfjm5jdB9+XKpQ==
+  dependencies:
+    "@spectrum-css/vars" "^8.0.0"
+
+"@spectrum-css/picker@^1.2.14":
+  version "1.2.14"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/picker/-/picker-1.2.14.tgz#df1628231916a5eb30f8e2e64f005db73efb9753"
+  integrity sha512-mR/ukKHt7jEgNCzqWOm0X28ODIThx8LYomOWyVCC6xuwXzzUvmujCpvaPLZuf8kq0VFSXgOevvThJO9G6gIuVw==
+
+"@spectrum-css/tabs@^3.2.22":
+  version "3.2.22"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/tabs/-/tabs-3.2.22.tgz#8e04fa3785a9686baa4696bfef4c5db0a19783ca"
+  integrity sha512-/8HmXQqwRQJ0vwJYId3/RcTRZrE7x1YxyDdVTJzYM8x80h9sTq2SKNkjth8iO6R3Nm8ecl1cW0THjGRHr/kpGQ==
+
+"@spectrum-css/typography@^4.0.21":
+  version "4.0.21"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/typography/-/typography-4.0.21.tgz#3ee8666e965dcce18e66a50a01e03b83530f420c"
+  integrity sha512-kg0WelIKh1vazu3AFiDObD9jtkKDxsOPTu/Tq3A50jYQdOeVWasVbPfI2PsZCAy9U0CWcO81Q9brsNOBsPr0PQ==
+
+"@spectrum-css/vars@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/vars/-/vars-8.0.0.tgz#b88a3b1165b63de50ab01f20ccafb42115d67443"
+  integrity sha512-cClQgNyH1VdNu6zdiZ5M7kbQDZS4/wPAclk5IPO5+nMhSzqTesUL/zfiaPB95MTCKFyVJrFpOeJ37HmUifWJ3A==
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz"
