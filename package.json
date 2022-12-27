@@ -5,7 +5,7 @@
   "version": "1.1.7",
   "publisher": "AdobeExL",
   "engines": {
-    "vscode": "^1.48.0"
+    "vscode": "1.74.1"
   },
   "homepage": "https://github.com/AdobeDocs/vsc-extensions.git",
   "repository": {
@@ -681,13 +681,6 @@
     "{adobeexl.adobe-markdown-authoring}/markdownlint-custom-rules/rules.js"
   ],
   "dependencies": {
-    "@spectrum-css/button": "^6.0.17",
-    "@spectrum-css/icon": "^3.0.25",
-    "@spectrum-css/menu": "^4.0.6",
-    "@spectrum-css/page": "^5.0.12",
-    "@spectrum-css/picker": "^1.2.14",
-    "@spectrum-css/tabs": "^3.2.22",
-    "@spectrum-css/typography": "^4.0.21",
     "@spectrum-css/vars": "^8.0.0",
     "js-yaml": "^4.1.0",
     "markdown-it": "^13.0.1",
